@@ -9,23 +9,39 @@
         <link rel="stylesheet" href="assets/main.css">
     </head>
     <body>
-        <h1>InstaRecipes</h1>
-        <div class="flip-card">
-            <!-- <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="assets/images/download.jpg" alt="Avatar" style="width:300px;height:200px;">
-                </div>
-                <div class="flip-card-back">
-                <ul> 
-                </ul>
-                </div>
 
+        <h1>InstaRecipes</h1>
+        <!-- <h3>Breakfast</h3> -->
+        <button id="add-dish">Add a Dish</button>
+        <button id="add-recipe">Add a Recipe to a Dish </button>
+
+        <form>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"></label>
+                <input type="name" class="form-control" id="name" placeholder=Name>
             </div>
-            <div class="container" > 
-                <h5> Name of Dish </h5>
-                <p> 0 </p> <button> ❤️ </button>
-            </div> -->
-        </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"></label>
+                <input type="image_url" class="form-control" id="image_url" placeholder="Place image url">
+            </div>
+            <label></label>
+            <select class="form-select" aria-label="Default select example" id="category">
+                <option selected>Select category</option>
+                <option value="Breakfast">Breakfast</option>
+                <option value="Lunch">Lunch</option>
+                <option value="Dinner">Dinner</option>
+                <option value="Appetizer">Appetizer</option>
+                <option value="Dessert">Dessert</option>
+              </select>
+            <div class="col-12">
+                <button type="submit" class="form-submit">Submit</button>
+            </div>
+
+        </form>
+
+        <form id="form-add-recipe"></form>
+
+        <div class="list-of-cards"></div>
     
         
         <script src="src/main.js" defer></script>

@@ -1,5 +1,6 @@
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
+    float: left;
     background-color: transparent;
     width: 300px;
     height: 300px;
@@ -43,4 +44,89 @@
     color: white;
     overflow: auto;
     transform: rotateY(180deg);
+  }
+
+  body {
+    /* background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/4995d8dc-d475-4038-96d3-5ab710e91f7f/d13hbqj-16f99d55-c9d8-4638-a33e-9b187f516f3e.jpg/v1/fill/w_1131,h_707,q_70,strp/hardwood_w_lights_by_zyklophon_d13hbqj-pre.jpg"); */
+    background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/09/wood-_texture1584-1250x834.jpg");
+    background-size: cover;
+  }
+
+  #add-dish, #add-recipe {
+    background: rgba(255,255,255,.2);
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 2vh;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px 4px;
+  }
+
+  #add-dish:hover, #add-recipe:hover {
+    background-color: transparent;
+    border: black solid 1px;
+    color: black;
+  }
+
+
+  form {
+    padding: 1rem;
+    width: stretch;
+    height: auto;
+    display: none;
+    background: black;
+    opacity: .8;
+  }
+
+  .form-control {
+    margin-bottom: 5vh;
+    width: 50%;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    background-color:transparent;
+    outline: none;
+    color: white;
+    caret-color: white;
+  }
+
+  .form-select {
+    margin-bottom: 5vh;
+    width: 50%;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    background-color:transparent;
+    outline: none;
+    color: white;
+    caret-color: white;
+  }
+
+  .form-submit {
+    background: rgba(255,255,255,.2);
+    width: 30%;
+    padding: 2vh;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px 4px;
+  }
+  
+  .form-submit:hover {
+    background-color: grey;
+    border: black solid 1px;
+    color: black;
+  }
+
+  p {
+    color: white;
+  }
+
+  h5 {
+    color: white;
+    font-size: 18px;
+  }
+
+  .dish-name {
+    color: white;
   }
