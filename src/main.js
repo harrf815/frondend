@@ -128,7 +128,6 @@ function postRecipe(newRecipe){
             ul.appendChild(li)
         }
     })
-    
 }
 
 //! Adding to the dish data 

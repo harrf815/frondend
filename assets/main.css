@@ -56,6 +56,7 @@
     /* background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/4995d8dc-d475-4038-96d3-5ab710e91f7f/d13hbqj-16f99d55-c9d8-4638-a33e-9b187f516f3e.jpg/v1/fill/w_1131,h_707,q_70,strp/hardwood_w_lights_by_zyklophon_d13hbqj-pre.jpg"); */
     background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/09/wood-_texture1584-1250x834.jpg");
     background-size: cover;
+    background-attachment: fixed;
   }
 
   #add-dish, #add-recipe {
@@ -72,9 +73,13 @@
   }
 
   #add-dish:hover, #add-recipe:hover {
+    background: url(https://media.tenor.com/images/64023bc82928fa5f16dba390627d340e/tenor.gif);
     background-color: transparent;
-    border: black solid 1px;
-    color: black;
+    /* border: black solid 1px; */
+    border: none;
+    color: white;
+    background-size:cover;
+    background-position: center;
   }
 
 
@@ -126,12 +131,12 @@
     color: black;
   }
 
-  p {
+  /* p {
     color: white;
     font-size: 15px;
     font-weight: bold;
     font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
-  }
+  } */
 
   h5 {
     color: white;
@@ -161,37 +166,47 @@
     font-size: 50px;
   } */
 
-  h1 {
-    cursor: pointer;
-    position: relative;
-    /* display: inline-block; */
-    font-size: 3rem;
-    background: linear-gradient(to bottom, #000, #000 60%, #fff 60%, #fff 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    background-repeat: no-repeat;
-    transition: background 0.2s ease-out;
-    white-space: nowrap;
-  }
-  h1:hover {
-    background-position: 0 11px;
-  }
 
-  span {
-    position: relative;
+  h1 {
+    /* background: url(https://media1.giphy.com/media/7WDpgeYllwXWCTn0I8/source.gif); */
+    /* background: url(https://media3.giphy.com/media/fSRQtBAzrPokPCItuu/giphy.gif); */
+    /* background: url(https://media2.giphy.com/media/MXEPYlqnMUeQDm0eMC/giphy.gif); */
+    background: url(https://media2.giphy.com/headers/gifgifachance/wk1ShDVLrwWk.gif);
+    /* background: url(https://media4.giphy.com/media/jQPAbXGxvJiCWI9Dqm/giphy.gif); */
+    background-size:cover;
+    background-position: center;
+    
+    -webkit-background-clip: text;
+    color: transparent; 
+    
+    width: 350px;
+    height: 100px;
+    box-sizing: border-box;
+    font-size: 58px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+    flex-shrink: 0;
+    letter-spacing: 3px;
+  }
+  p {
+    background: url(https://media1.giphy.com/media/7WDpgeYllwXWCTn0I8/source.gif);
+    /* background: url(https://media3.giphy.com/media/fSRQtBAzrPokPCItuu/giphy.gif); */
+    /* background: url(https://media2.giphy.com/media/MXEPYlqnMUeQDm0eMC/giphy.gif); */
+    background-size: cover;
+    background-position: center;
+    
+    -webkit-background-clip: text;
+    color: transparent; 
+  
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    flex-shrink: 0;
+  
   }
   
-  span:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 15px;
-    background: #000;
-    bottom: 9px;
-    transition: all 0.2s ease-out;
-  }
-  span:hover:before {
-    transform: translateY(10px)
-  }
+ 
+  
+  
