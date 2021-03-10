@@ -220,8 +220,11 @@ function buildCard(dish){
     img.style = "width:300px;height:300px"
     h5.innerText = dish.name 
     p.innerText = dish.likes 
+    p.style="display:inline-block"
     delBtn.innerText = " 🚫 "
+    delBtn.className = "del-button"
     likeBtn.innerText = " ❤️ "
+    likeBtn.className = "like-button"
     dish.recipes.forEach(recipe => {
         ingredients = recipe.ingredients.split(',')
         for (i = 0; i < ingredients.length; i++){
