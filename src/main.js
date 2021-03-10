@@ -121,7 +121,7 @@ function postRecipe(newRecipe){
         
         let flipCard = document.getElementById(newRecipe.dish_id)
         let ul = flipCard.querySelector('ul')
-        let ingredients = dish.ingredients.split(',') 
+        let ingredients = dish.ingredients.trim().split(',') 
         for (i = 0; i <ingredients.length; i++){
             let li = document.createElement('li')
             li.innerText = ingredients[i]

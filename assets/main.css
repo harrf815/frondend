@@ -35,11 +35,11 @@
   }
   
   /* Style the front side (fallback if image is missing) */
-  .flip-card-front {
-    /* background-color: #bbb;
-    color: black; */
+  /* .flip-card-front {
+    background-color: #bbb;
+    color: black;
 
-  }
+  } */
   
   /* Style the back side */
   .flip-card-back {
@@ -155,8 +155,43 @@
     font-size: 20px;
   }
 
-  h1 {
+  /* h1 {
     font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
     font-weight: bold;
     font-size: 50px;
+  } */
+
+  h1 {
+    cursor: pointer;
+    position: relative;
+    /* display: inline-block; */
+    font-size: 3rem;
+    background: linear-gradient(to bottom, #000, #000 60%, #fff 60%, #fff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-repeat: no-repeat;
+    transition: background 0.2s ease-out;
+    white-space: nowrap;
+  }
+  h1:hover {
+    background-position: 0 11px;
+  }
+
+  span {
+    position: relative;
+  }
+  
+  span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 15px;
+    background: #000;
+    bottom: 9px;
+    transition: all 0.2s ease-out;
+  }
+  span:hover:before {
+    transform: translateY(10px)
   }
