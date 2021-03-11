@@ -1,44 +1,53 @@
-Name: Insta Recipes 
+# IntsaRecipes 
 
-Models: 
+## Descriptions 
+Welcome to InstaRecipes!! A webpage where users can come together and share their famous recipes with the community. InstaRecipes is a free and public app that anyone can access and post their sercet recipes. Users are able to like the recipes and which can show the community which recipe is the favorite within the community.
 
-Dish:
--	Name
--	Category (breakfast, appetizer, lunch, dinner, dessert) 
--	Likes 
+## Install Instructions (backend-api file)
+    - bundle install
+    - rails db:migrate 
+    - rails db:seed
+    - rails s 
+    - open index.html (frontend file)
 
-Ingredient:
--	Ingredients – array 
--	Instructions 
--	Food id
+## Technologies 
+    - Ruby version: 2.6.1
+    - Rails version: 6.1.3
 
-Relationship:
+## Contributor
 
-Dish:
-has many recipes 
+Raising an issue or suggesting an improvement 
 
-Recipe:
-Belongs to dish 
+* If you notice a problem with the app that you believe needs improvement. Feel free to make changes or leave comments. Use a git workflow to make it happen:
 
-User Story:
+    1. Fork this repository 
+    2. Make the changes on your fork, with a descriptive commits
+    3. Open a Pull request against this repo 
 
-User can like a dish/ recipe 
-User can create a dish/recipe 
+## License 
 
-Fun interactions:
+MIT License
 
-list of food categories (breakfast, appetizer, lunch, dinner, dessert), (most popular) 
-Food card can flip to show recipe 
-like button
-create button 
+Copyright (c) [2021] [InstaRecipes]
 
-If Possible:
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-Have the card move around based on the total likes 
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-Stretch Goals:
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-Add a review
-Edit recipes 
-Delete recipes 
-Add a user 
+   
+
+

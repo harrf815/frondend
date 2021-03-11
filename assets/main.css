@@ -140,7 +140,8 @@
 
   h5 {
     color: white;
-    font-size: 18px;
+    font-size: 20px;
+    margin-block-end: 0px;
     font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
   }
 
@@ -188,6 +189,7 @@
     line-height: 100px;
     flex-shrink: 0;
     letter-spacing: 3px;
+    margin-block-end: 0px;
   }
   p {
     background: url(https://media1.giphy.com/media/7WDpgeYllwXWCTn0I8/source.gif);
