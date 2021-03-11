@@ -149,7 +149,6 @@ function getDishes (){
     fetch(BaseUrl)
         .then(res => res.json())
         .then(dishes => {
-            // byCategory(dishes)
             recipeForm(dishes)
             dishes.forEach(dish => buildCard(dish))
         })
@@ -245,11 +244,3 @@ function buildCard(dish){
     flipCardBack.append(ul, delBtn)
     container2.append(h5,p,likeBtn)
 }
-//!
-// const category = document.querySelector('h3')
-// category.addEventListener('click',)
-
-//! 
-// function byCategory(dishes){
-
-// }
