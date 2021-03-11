@@ -3,6 +3,9 @@
 ## Descriptions 
 Welcome to InstaRecipes!! A webpage where users can come together and share their famous recipes with the community. InstaRecipes is a free and public app that anyone can access and post their sercet recipes. Users are able to like the recipes and which can show the community which recipe is the favorite within the community.
 
+## Backend-api Repo 
+https://github.com/harrf815/backend-api
+
 ## Install Instructions (backend-api file)
     - bundle install
     - rails db:migrate 
